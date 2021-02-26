@@ -7,6 +7,5 @@ class Solution:
                 
         for i in range(int(len(tmp)/2)):
             if tmp[i] != tmp[len(tmp)-i-1]:
-                isPalindrome = False
                 return False
         return True
