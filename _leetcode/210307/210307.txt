@@ -9,10 +9,10 @@ https://leetcode.com/problems/merge-two-sorted-lists/
 Reverse Linked List
 https://leetcode.com/problems/reverse-linked-list/
 
-Add Two Numbers
+Add Two Numbers - 2
 https://leetcode.com/problems/add-two-numbers/
 
-Swap Nodes in Pairs
+Swap Nodes in Pairs - 24
 https://leetcode.com/problems/swap-nodes-in-pairs/
 
 Odd Even Linked List
@@ -32,10 +32,10 @@ Daily Temperatures - 739
 https://leetcode.com/problems/daily-temperatures/
 
 <큐>
-Implement Stack using Queues
+Implement Stack using Queues - 225
 https://leetcode.com/problems/implement-stack-using-queues/
 
-Implement Queue using Stacks
+Implement Queue using Stacks - 232
 https://leetcode.com/problems/implement-queue-using-stacks/
 
 Design Circular Queue
