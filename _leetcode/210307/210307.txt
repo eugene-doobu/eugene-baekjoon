@@ -18,7 +18,7 @@ https://leetcode.com/problems/swap-nodes-in-pairs/
 Odd Even Linked List
 https://leetcode.com/problems/odd-even-linked-list/
 
-Reverse Linked List 2
+Reverse Linked List
 https://leetcode.com/problems/reverse_linked_list_ii/
 
 <스택>

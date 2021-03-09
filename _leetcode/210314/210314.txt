@@ -1,0 +1,40 @@
+2020 03 14 일요일 9시
+<deque>
+Design Circular Deque
+(기본 구현 문제, 스터디x 연습용(질문가능)
+https://leetcode.com/problems/design-circular-deque/
+
+외벽 점검
+https://programmers.co.kr/learn/courses/30/lessons/60062
+
+숨바꼭질3
+https://www.acmicpc.net/problem/13549
+
+카드2
+https://www.acmicpc.net/problem/2164
+
+
+<Priority>
+Merge k Sorted Lists
+https://leetcode.com/problems/merge-k-sorted-lists/
+
+이중 우선순위 큐
+https://www.acmicpc.net/problem/7662
+
+
+<Hash Table>
+Jewels and Stones 
+(기본 문제, 스터디 x 연습용(질문가능))
+https://leetcode.com/problems/jewels-and-stones/
+
+Design HashMap
+https://leetcode.com/problems/design-hashmap/
+
+Longest Substring Without Repeating Characters
+https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
+Top K Frequent Elements
+https://leetcode.com/problems/top-k-frequent-elements/
+
+전화번호 목록
+https://programmers.co.kr/learn/courses/30/lessons/42577
