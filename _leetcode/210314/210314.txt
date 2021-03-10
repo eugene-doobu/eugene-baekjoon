@@ -15,10 +15,10 @@ https://www.acmicpc.net/problem/2164
 
 
 <Priority>
-Merge k Sorted Lists
+Merge k Sorted Lists - 23
 https://leetcode.com/problems/merge-k-sorted-lists/
 
-이중 우선순위 큐
+이중 우선순위 큐 - 백준 7662
 https://www.acmicpc.net/problem/7662
 
 
