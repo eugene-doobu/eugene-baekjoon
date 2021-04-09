@@ -1,0 +1,30 @@
+const fs = require('fs');
+const stdin = (process.platform === 'linux'
+        ? fs.readFileSync('/dev/stdin').toString()
+        : `3
+40 40 40
+`
+).split('\n');
+
+const input = (() => {
+    let line = 0;
+    return () => stdin[line++];
+})();
+
+let t = input();
+var sumY = 0;
+var sumM = 0;
+q = input().split(' ').map(Number);
+q.forEach(function(e){
+    e += 0.1; // 0일경우
+    sumY += Math.ceil(e / 30) * 10;
+    sumM += Math.ceil(e / 60) * 15;
+});
+
+if(sumY < sumM){
+    console.log("Y "+ sumY+"\n");
+} else if(sumY > sumM){
+    console.log("M "+ sumM+"\n");
+} else{
+    console.log("Y M "+ sumM+"\n");
+}
