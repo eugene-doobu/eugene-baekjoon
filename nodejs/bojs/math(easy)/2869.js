@@ -9,7 +9,6 @@ const input = (() => {
     return () => stdin[line++];
 })();
 
-let ans = 1;
 let nums = input().split(" ").map(Number);
 let lastup = nums[0];
 let down = nums[1];
