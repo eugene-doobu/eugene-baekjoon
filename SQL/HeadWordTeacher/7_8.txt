@@ -1,0 +1,14 @@
+CREATE TABLE 교수
+(
+	교수번호 NUMBER NOT NULL,
+	교수명 CHAR(12),
+	전공과목 CHAR(15) CHECK(전공과목 IN('물리학', '심리학'))
+);
+
+/*
+NOT NULL : NULL값 허용x
+PRIMARY KEY : 기본 키
+FOREING KEY : 참조 키
+UNIQUE : 중복값 없음
+CHECK : IN () 으로 제한
+*/

@@ -1,0 +1,7 @@
+SELECT 결제유형, COUNT(*) AS 입장객수
+FROM 결제
+GROUP BY 결제유형;
+
+/*
+보통 COUNT문에는 *을 이용한다.
+*/

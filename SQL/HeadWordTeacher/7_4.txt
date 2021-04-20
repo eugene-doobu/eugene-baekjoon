@@ -1,0 +1,6 @@
+(SELECT DISTINCT A FROM X) UNION ALL (SELECT A FROM Y)
+
+/*
+UNION - 중복 제거
+UNION ALL - 중복 포함
+*/

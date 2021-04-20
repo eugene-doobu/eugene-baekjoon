@@ -1,0 +1,3 @@
+SELECT 부서, 성과금등급, SUM(성과금) AS 성과금합계
+FROM 성과금
+GROUP BY ROLLUP(부서, 성과금등급);

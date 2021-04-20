@@ -1,0 +1,3 @@
+SELECT *
+FROM 학생
+WHERE 학생 IN (1,4);

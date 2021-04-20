@@ -1,0 +1,3 @@
+UPDATE 학과
+SET 학과번호 = 777
+WHERE 교수명 LIKE '황%';

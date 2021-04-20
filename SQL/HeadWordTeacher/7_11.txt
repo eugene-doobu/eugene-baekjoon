@@ -1,0 +1,3 @@
+GRANT INSERT ON 직원 TO 고길동;
+
+/* 그온투 */

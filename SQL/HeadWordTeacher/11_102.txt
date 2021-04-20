@@ -1,0 +1,4 @@
+SELECT 학번, 학점
+FROM 성적
+WHERE 과목 = '컴퓨터 구조'
+ORDER BY 학점 ASC;

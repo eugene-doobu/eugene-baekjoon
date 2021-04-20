@@ -1,0 +1,7 @@
+CREATE INDEX INDEX_STUDENT ON 학생(학번);
+DROP INDEX INDEX_STUDENT ON 학생;
+
+/*
+CREATE INDEX 인덱스명 ON 테이블명(열명1, 열명2, ...);
+DROP INDEX 인덱스명 ON 테이블명;
+*/

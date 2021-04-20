@@ -1,0 +1,15 @@
+select count(이름)
+from
+(
+	select 이름 from 학생 where 성적>= 80 and 성적 <= 90
+	union select 이름 from 학생 where 성적 >= 75 and 성적 <= 80
+) a;
+
+/* output
+count(이름)
+4
+*/
+
+/*
+union - 중복을 제거한 합집합을 출력
+*/
