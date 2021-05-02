@@ -13,11 +13,11 @@ let str = '';
         let stack = [];
 
         // Phase 1
+        let rst = /<[^/a-z0-9]/.test(input);
         input = input.replace(/&(lt|gt|amp);/g, '');
         input = input.replace(/&x([a-fA-F0-9]{2})+;/g, '');
 
         // Phase 2
-        let rst = /<[^/a-z0-9]/.test(input);
         input = input.replace(/<[a-z0-9]+\/>/g, '');
         input = input.replace(/<\/?[a-z0-9]+>/g, function (re){
             if(re.startsWith('</')){
