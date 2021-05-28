@@ -25,5 +25,5 @@ function solution(n, lost, reserve) {
 }
 
 console.log(
-    solution(5, [1, 2, 3], [2, 3, 4])
+    solution(1, [2], [])
 );
