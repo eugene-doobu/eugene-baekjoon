@@ -1,10 +1,6 @@
 def solution(n):
     array = [[0] * n for _ in range(n)]
 
-    maximum = 0
-    for i in range(1,n+1):
-      maximum += i
-
     row = -1
     col = 0
     power = n
