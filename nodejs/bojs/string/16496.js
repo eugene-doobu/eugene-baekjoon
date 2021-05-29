@@ -7,27 +7,13 @@ const stdin = (process.platform === 'linux'
 
 const n = +stdin[0];
 let arr = stdin[1].split(' ');
-let zeroCheck = true;
-for(let i=0; i<n; i++){
-    if(arr[i] != 0){
-        zeroCheck = false;
-        break;
-    }
-}
 
 (function (){
-    if(zeroCheck){
-        console.log(0);
-        return;
-    }
-    arr.sort(function (a, b){
-        if(a+b > b+a) return 1;
-        else return -1;
-    });
+    arr.sort( (a, b) => a+b > b+a ? 1 : -1);
 
     let rst = "";
     for(let i=0; i<n; i++){
         rst += arr.pop()
     }
-    console.log(rst);
+    console.log(BigInt(rst)+"");
 })()
