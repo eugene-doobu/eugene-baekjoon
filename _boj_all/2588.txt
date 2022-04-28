@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int numberA = Int32.Parse(Console.ReadLine());
+            int numberB = Int32.Parse(Console.ReadLine());
+            Console.WriteLine(numberA * (numberB % 10));
+            Console.WriteLine(numberA * ((numberB / 10) % 10));
+            Console.WriteLine(numberA * (numberB / 100));
+            Console.WriteLine(numberA * numberB);
+        }
+    }
+}
+
+//string[] s = Console.ReadLine().Split();
+//int A, B, C;
+//A = Int32.Parse(s[0]);
+//B = Int32.Parse(s[1]);
+//C = Int32.Parse(s[2]);
+//Console.WriteLine((A + B) % C);
+//Console.WriteLine((A % C + B % C) % C);
+//Console.WriteLine((A * B) % C);
+//Console.WriteLine((A % C) * (B * C) % C);

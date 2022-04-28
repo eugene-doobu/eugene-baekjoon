@@ -1,0 +1,40 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] s = Console.ReadLine().Split();
+            int A;
+            A = Int32.Parse(s[0]);
+
+            if(A>=90)
+            {
+                Console.WriteLine("A");
+            }
+            else if (A >= 80)
+            {
+                Console.WriteLine("B");
+            }
+            else if (A >= 70)
+            {
+                Console.WriteLine("C");
+            }
+            else if (A >= 60)
+            {
+                Console.WriteLine("D");
+            }
+            else
+            {
+                Console.WriteLine("F");
+            }
+        }
+    }
+}

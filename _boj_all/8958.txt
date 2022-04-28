@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Medici_study
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string s_NumberOfRoutine;
+            int numberOfRoutine = 0;
+
+            List<string> routine_OX = new List<string>();
+
+            s_NumberOfRoutine = Console.ReadLine();
+            numberOfRoutine = Convert.ToInt32(s_NumberOfRoutine);
+
+            for (int i = 0; i < numberOfRoutine; i++)
+            {
+                routine_OX.Add(Console.ReadLine());
+            }
+
+            foreach(string OXOX in routine_OX)
+            {
+                int score = 0;
+                int continuousScore = 1;
+
+                for (int i = 0; i < OXOX.Length; i++)
+                {
+                    if (OXOX.Substring(i,1) == "O")
+                    {
+                        score += continuousScore++;
+                    }
+                    else if(OXOX.Substring(i, 1) == "X")
+                    {
+                        continuousScore = 1;
+                    }
+                }
+                Console.WriteLine("{0}", score);
+            }
+        }
+    }
+}

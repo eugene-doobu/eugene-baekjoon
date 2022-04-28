@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Medici_study
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numberOfNum;
+            string number;
+
+            int sumNumber = 0;
+
+            numberOfNum = int.Parse(Console.ReadLine());
+            number = Console.ReadLine();
+
+            for(int i=0; i < numberOfNum; i++)
+            {
+                sumNumber += int.Parse(number.Substring(numberOfNum - (i + 1), 1));
+                number = number.Substring(0, numberOfNum - ( i + 1 ));
+            }
+            Console.WriteLine("{0}", sumNumber);
+        }
+    }
+}

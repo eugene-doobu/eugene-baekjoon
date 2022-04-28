@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+#define fastio cin.tie(0)->sync_with_stdio(0)
+using namespace std;
+
+int main() {
+	fastio;
+	cout << "     /~\\\n" <<
+		"    ( oo|\n" <<
+		"    _\\=/_\n" <<
+		"   /  _  \\\n" <<
+		"  //|/.\\|\\\\\n" <<
+		" ||  \\ /  ||\n" <<
+		"============\n" <<
+		"|          |\n" <<
+		"|          |\n" <<
+		"|          |\n";
+}

@@ -1,0 +1,2 @@
+let a = ["Korea", "Yonsei"]
+console.log(a[Math.floor(Math.random()*2)]);

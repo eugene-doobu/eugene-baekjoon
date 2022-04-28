@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+
+namespace Eugene1019
+{
+    class Program
+    {
+        static Dictionary<int, int> dict = new Dictionary<int, int>();
+        static void calc(int n, int ten)
+        {
+            while (n > 0)
+            {
+                // Console.Write(n + " / ");
+                // Console.WriteLine(n);
+                dict[n % 10] += ten;
+                n /= 10;
+            }
+        }
+
+        static void solve(int A, int B, int ten)
+        {
+            while (A % 10 != 0 && A <= B)
+            {
+                calc(A, ten);
+                A++;
+            }
+            if (A > B) return;
+            // Console.WriteLine("A->B");
+            while (B % 10 != 9 && B >= A)
+            {
+                calc(B, ten);
+                B--;
+            }
+
+            int cnt = (B / 10 - A / 10 + 1);
+            for (int i = 0; i < 10; ++i)
+                dict[i] += cnt * ten;
+
+            solve(A / 10, B / 10, ten * 10);
+
+        }
+
+        static void Main(string[] args)
+        {
+            int n;
+            n = int.Parse(Console.ReadLine());
+
+            DickInit();
+            solve(1, n, 1);
+
+            // output
+            foreach (KeyValuePair<int, int> items in dict)
+                Console.Write(dict[items.Key] + " ");
+        }
+
+        static void DickInit()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                dict.Add(i, 0);
+            }
+        }
+    }
+}

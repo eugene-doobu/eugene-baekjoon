@@ -1,0 +1,31 @@
+const fs = require('fs');
+const stdin = (process.platform === 'linux'
+        ? fs.readFileSync('/dev/stdin').toString()
+        : `3`
+).split('\n');
+
+const input = (() => {
+    let line = 0;
+    return () => stdin[line++];
+})();
+
+let l = [];
+for(let i=0; i<=82; i++){
+    l.push(0);
+}
+l[1] = 1;
+l[2] = 1;
+
+function calL(n){
+    if(n < 1) return 0;
+    if(n == 1 || n==2) return 1;
+    if(l[n] != 0) return l[n];
+    l[n] = calL(n-1) + calL(n-2);
+    return l[n]
+}
+
+let n = parseInt(input());
+calL(n)
+
+if(n == 1) console.log(4);
+else console.log(l[n]*4 + l[n-1]*2);
