@@ -1,8 +1,10 @@
 #include <bits/stdc++.h>
+#define fastio cin.tie(0)->sync_with_stdio(0)
+
 using namespace std;
 
 int r, c;
-int dx[4] = { 0,-1,0,1 }; // ÏÉÅ Ï¢å Ìïò Ïö∞
+int dx[4] = { 0,-1,0,1 }; // ªÛ ¡¬ «œ øÏ
 int dy[4] = { 1,0,-1,0 };
 
 bool vis[501][501][4];
@@ -10,6 +12,7 @@ bool vis[501][501][4];
 void solve(int i, int j, int k, const vector<string>& grid, vector<int>& answer) {
     int length = 0;
     int startI = i, startJ = j, startK = k;
+
     while (true) {
         if (vis[i][j][k]) return;
         vis[i][j][k] = true;
@@ -17,15 +20,8 @@ void solve(int i, int j, int k, const vector<string>& grid, vector<int>& answer)
         i = (i + dx[k] + r) % r;
         j = (j + dy[k] + c) % c;
 
-        switch (grid[i][j])
-        {
-        case 'L':
-            k = (k + 1) % 4;
-            break;
-        case 'R':
-            k = (k - 1 + 4) % 4;
-            break;
-        }
+        if (grid[i][j] == 'L') k = (k + 1) % 4;
+        if (grid[i][j] == 'R') k = (k - 1 + 4) % 4;
 
         length++;
 
