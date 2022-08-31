@@ -1,0 +1,1 @@
+const fs=require('fs');console.log(+fs.readFileSync('/dev/stdin').toString().split('\n')[0]%2?"SK":"CY");
