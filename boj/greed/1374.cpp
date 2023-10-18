@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	fastio;
-	int ans = 1; // ?
+	int ans = 0;
 	int n;  cin >> n;
 	priority_queue<int, vector<int>, greater<>> lastTimes;
 	vector<pii> vpii;
@@ -30,8 +30,8 @@ int main()
 			if (lastTimes.top() <= start)
 				lastTimes.pop();
 			lastTimes.push(end);
-			ans = max(ans, (int)lastTimes.size());
 		}
+		ans = max(ans, (int)lastTimes.size());
 	}
 	cout << ans;
 	/*
