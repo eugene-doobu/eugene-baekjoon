@@ -5,18 +5,18 @@ using namespace std;
 int idx = 1, n, s[100'001], v[100'001];
 set<int> adj[100'001];
 
-int check()
+int check(bool isRoot)
 {
 	int parent = s[idx];
-	int numOfChild = adj[parent].size() - (idx == 1 ? 0 : 1);
+	int numOfChild = adj[parent].size() - (isRoot ? 0 : 1);
 
 	v[parent] = 1; idx++;
-	while(numOfChild--)
+	while (numOfChild--)
 	{
 		int child = s[idx];
 		if (v[child]) return 0;
 		if (!adj[parent].count(child)) return 0;
-		if (!check()) return 0;
+		if (!check(false)) return 0;
 	}
 	return 1;
 }
@@ -32,5 +32,5 @@ int main()
 	}
 	for (int i = 1; i <= n; ++i) cin >> s[i];
 	if (s[1] != 1) cout << 0;
-	else cout << check();
+	else cout << check(true);
 }
